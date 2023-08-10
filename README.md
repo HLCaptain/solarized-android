@@ -1,8 +1,9 @@
 # Solarized
-[![](https://jitpack.io/v/phototime/solarized-android.svg)](https://jitpack.io/#phototime/solarized-android)
+[![](https://jitpack.io/v/HLCaptain/solarized-android.svg)](https://jitpack.io/#HLCaptain/solarized-android)
 
+This is a fork of [the original library](https://github.com/phototime/solarized-android) made by [phototime](https://github.com/phototime). I made it compatible down to API 21 (originally 26) via desugaring. On the other hand, I upgraded Kotlin and AGP versions, so it can be a problem in terms of compatibility.
 
-This is Android library to calculate sun phases like golden hour, blue hour, sunrise, sunset etc
+This is Android library to calculate sun phases like golden hour, blue hour, sunrise, sunset etc.
 
 ## Features
 - first / last light
@@ -10,7 +11,6 @@ This is Android library to calculate sun phases like golden hour, blue hour, sun
 - blue hour
 - sunrise / sunset
 - day
-
 
 ## How to use?
 ```kotlin
@@ -41,17 +41,17 @@ println(morningGoldenHour.start) // LocalDateTime at UTC
 
 ## How to install?
 **Step 1**. Add the JitPack repository to your top-level build file 
-```gradle
+```kotlin
 allprojects {
-  repositories {
-    maven { url 'https://jitpack.io' }
-  }
+    repositories {
+        maven("https://jitpack.io")
+    }
 }
 ```
 **Step 2**. Add the dependency to your module
-```gradle
+```kotlin
 dependencies {
-  implementation 'com.github.phototime:solarized-android:1.0.8'
+    implementation("com.github.hlcaptain:solarized-android:SNAPSHOT")
 }
 ```
 
