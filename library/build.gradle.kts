@@ -1,5 +1,5 @@
 plugins {
-    id("maven-publish") // FIXME: for some reason, Version Catalogs cannot be used here
+    `maven-publish`
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
 }
